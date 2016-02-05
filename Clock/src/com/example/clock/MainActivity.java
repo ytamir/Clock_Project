@@ -1,33 +1,49 @@
 package com.example.clock;
 
-import android.support.v7.app.ActionBarActivity;
-import android.annotation.SuppressLint;
+import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
-@SuppressLint("NewApi")
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends AppCompatActivity {
 	
 	private String class_name;
+	
+	private Button settings;
 	
 	/*
 	 * Constructor the stores the Class_Name for debugging purposes 
 	 */
-	private MainActivity() {
+	public MainActivity() {
 		
 		class_name = getClass().getName();
+		
+	}
+	
+	@SuppressWarnings("unused")
+	public void clickedSettings(View view) {
+		
+		Intent settings = new Intent(getApplicationContext(),Settings.class); // Create the new intent 
+		
+		startActivity(settings); // Start the activity
 		
 	}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    	
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
         Log.d(class_name, "Creating");
+        
+        settings = (Button) findViewById(R.id.settings_button); // Enable the start variable to hold the start_button
     }
 
     @Override

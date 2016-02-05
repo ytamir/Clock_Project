@@ -1,14 +1,15 @@
 package com.example.clock;
 
-import android.support.v7.app.ActionBarActivity;
+
+import android.support.v7.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-@SuppressLint("NewApi")
-public class Settings extends ActionBarActivity {
+
+public class Settings extends AppCompatActivity {
 	
 	
 	private String class_name;
@@ -16,7 +17,7 @@ public class Settings extends ActionBarActivity {
 	/*
 	 * Constructor the stores the Class_Name for debugging purposes 
 	 */
-	private Settings() {
+	public Settings() {
 		
 		class_name = getClass().getName();
 		
@@ -26,6 +27,8 @@ public class Settings extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_settings);
+		
+		
 	}
 
 	@Override
