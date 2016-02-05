@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 
 
@@ -17,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
 	private String class_name;
 	
 	private Button settings;
-	
-	private TextView showtime; //Textview to display time
 	
 	/*
 	 * Constructor the stores the Class_Name for debugging purposes 
@@ -29,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
 		
 	}
 	
-	
-
+	@SuppressWarnings("unused")
 	public void clickedSettings(View view) {
 		
 		Intent settings = new Intent(getApplicationContext(),Settings.class); // Create the new intent 
@@ -48,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d(class_name, "Creating");
         
         settings = (Button) findViewById(R.id.settings_button); // Enable the start variable to hold the start_button
-        
-        showtime = (TextView) findViewById(R.id.timer);
     }
 
     @Override

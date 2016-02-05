@@ -29,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
 		
 	}
 	
-	
-
+	@SuppressWarnings("unused")
 	public void clickedSettings(View view) {
 		
 		Intent settings = new Intent(getApplicationContext(),Settings.class); // Create the new intent 
