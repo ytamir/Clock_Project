@@ -1259,3 +1259,69 @@ org.xml.sax.SAXParseException; lineNumber: 53; columnNumber: 15; cvc-complex-typ
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2016-02-05 11:40:28.350
 !MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-02-05 11:55:22.743
+!MESSAGE Failed converting ECJ parse tree to Lombok for file C:\Users\Alec\ClockRepo\Clock\src\com\example\clock\Settings.java
+!STACK 0
+java.lang.NullPointerException: returnTypeReference is mandatory
+	at lombok.ast.MethodDeclaration.astReturnTypeReference(MethodDeclaration.java:75)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1236)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:562)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:485)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:440)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.ide.eclipse.adt.internal.lint.EclipseLintClient$EclipseJavaParser.parseJava(EclipseLintClient.java:1166)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:194)
+	at com.android.tools.lint.client.api.LintDriver.checkIndividualJavaFiles(LintDriver.java:1707)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1024)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:883)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:434)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:377)
+	at com.android.ide.eclipse.adt.internal.lint.LintJob.run(LintJob.java:163)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-02-05 11:55:28.209
+!MESSAGE Failed converting ECJ parse tree to Lombok for file C:\Users\Alec\ClockRepo\Clock\src\com\example\clock\Settings.java
+!STACK 0
+java.lang.NullPointerException: returnTypeReference is mandatory
+	at lombok.ast.MethodDeclaration.astReturnTypeReference(MethodDeclaration.java:75)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1236)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:562)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:485)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:440)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.ide.eclipse.adt.internal.lint.EclipseLintClient$EclipseJavaParser.parseJava(EclipseLintClient.java:1166)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:194)
+	at com.android.tools.lint.client.api.LintDriver.checkIndividualJavaFiles(LintDriver.java:1707)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1024)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:883)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:434)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:377)
+	at com.android.ide.eclipse.adt.internal.lint.LintJob.run(LintJob.java:163)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
